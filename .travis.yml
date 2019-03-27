@@ -1,6 +1,0 @@
-language: C
-sudo: false 
-compiler: gcc
-script:
-- gcc -o demo demo.c
-- ./demo
