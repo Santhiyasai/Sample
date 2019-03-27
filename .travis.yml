@@ -1,22 +1,6 @@
-int ledPin = 13; 
-int pirState =2; 
-void setup()
-{
-pinMode(ledPin, OUTPUT); // declare LED as output 
-Serial.begin(9600);
-}
-
-void loop(){
-if (digitalRead(pirState) == LOW)
-{
-digitalWrite(ledPin, LOW); //  LED_OFF
-  delay(1000);
-}
-else
-{
-if (digitalRead(pirState) == HIGH){
-  digitalWrite(ledPin, HIGH); //  LED_ON
-  delay(1000);
-}
-}
-}
+language: C
+sudo: false 
+compiler: gcc
+script:
+- gcc -o sample sample.c
+- ./sample
