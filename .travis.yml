@@ -2,5 +2,5 @@ language: C
 sudo: false 
 compiler: gcc
 script:
-- gcc -o sample sample.c
-- ./sample
+- gcc -o demo demo.c
+- ./demo
